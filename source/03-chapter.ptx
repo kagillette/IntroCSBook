@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>IBranching - How Computers Make Decisions</title>
+
+  <introduction>
+    <p>hpih</p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="03-01-section.ptx" />
+
+</chapter>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="getting-started" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Writing Programs With the p5js Editor</title>
+  
+  <!-- include sections -->
+  <xi:include href="01-01-section.ptx" />
+  <xi:include href="01-02-section.ptx" />
+  <xi:include href="01-03-section.ptx" />
+  <xi:include href="01-04-sec-p5js-demo.ptx" />
+
+</chapter>

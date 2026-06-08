@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-1a" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Function Definition</title>
+  
+  <p>A function definition always has the following parts: the word <alert>function</alert>, 
+     the name of the function, a pair of parentheses, and a pair of curly brackets.
+    The beginning and ending of a functon are marked with curly braces: an open curly brace {
+    marks the beginning of the func?on, and a closed curly brace } marks the end of the 
+    functon.</p> 
+  <pre>
+    <code>
+      function nameOfFunction() {
+
+      }
+    </code>
+  </pre>   
+
+</section>

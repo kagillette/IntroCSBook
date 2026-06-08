@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Functions</title>
+    <objectives>
+    <ul>
+      <li><p>Understanding how the starter code works</p></li>
+      <li><p>Begin to understand the purpose of the functions, <c>setup</c>, <c>draw</c>, <c>canvas</c>, <c>background</c></p></li>
+    </ul>
+  </objectives>
+
+  <p>There are two <term>function definitions</term> in the code window: setup and draw.</p>
+  <pre>
+    <code>
+      function setup() {
+         ...
+      }
+
+      function draw() {
+         ...
+      }
+    </code>
+  </pre>     
+  <p>
+    The statement inside the setup function, <c>createCanvas</c>, is executed one time, 
+    while the statement inside the draw function, <c>background</c>, is executed repeatedly 
+    (this is often referred to as an infinite loop).    
+  </p>
+  <p><c>createCanvas(400,400)</c> is a <term>function call</term>. It calls a built-in function 
+     from the p5 library. It has two arguments inside it's parentheses, 400 and 400.
+     The first argument makes a canvas that is 400 <term>pixels</term> wide and 400 
+     <term>pixels</term> tall. As you recall, it is the gray square to the right of the 
+     code window. 
+  </p>
+
+  <p>MCQ WHAT IS THE OTHER FUNCTION CALL IN THIS PROGRAM?</p>
+  <p>MCQ WHAT IS THE ARGUMENT TO THIS FUNCTION CALL?</p>   
+
+  <p>For the following, the canvas will appear <alert>below</alert> the code window, which 
+    is different from the p5 editor</p>
+ <program xml:id="p5js-modify-starter-code" interactive="activecode" language="html">
+
+    <preamble visible="no">
+      <![CDATA[<!DOCTYPE html>
+<html>
+<head>
+  <script src="external/p5.min.js"></script>
+</head>
+<body>]]>
+    </preamble>
+
+    <code>
+<![CDATA[<script>
+
+  function setup() {
+    createCanvas(400, 300);
+  }
+
+  function draw() {
+    background(220);
+  }
+  
+</script>]]>
+    </code>
+
+  </program>
+
+  <p>Arguments are separated by commas, so the number of commas will always be one less than
+     the number of arguments.    </p>
+</section>

@@ -1,0 +1,46 @@
+<section xml:id="sec-p5js-demo">
+  <title>Your First Sketch: Drawing a Line</title>
+  <p>
+    Every p5.js sketch is built around two functions.
+    <c>setup()</c> runs exactly once when the sketch starts — use it to create the canvas.
+    <c>draw()</c> runs repeatedly, once per frame — use it to draw things.
+  </p>
+  <p>
+    The sketch below calls <c>line(x1, y1, x2, y2)</c> to draw a straight line.
+    The four arguments are the <m>x</m> and <m>y</m> coordinates of the start point,
+    followed by the <m>x</m> and <m>y</m> coordinates of the end point.
+    Notice that <m>(0, 0)</m> is the <em>top-left</em> corner of the canvas.
+  </p>
+  <p>
+    Press <em>Run</em> to see it in action, then try changing the numbers and running again.
+  </p>
+
+  <program xml:id="p5js-line-example" interactive="activecode" language="html">
+
+    <preamble visible="no">
+      <![CDATA[<!DOCTYPE html>
+<html>
+<head>
+  <script src="external/p5.min.js"></script>
+</head>
+<body>]]>
+    </preamble>
+
+    <code>
+<![CDATA[<script>
+
+  function setup() {
+    createCanvas(400, 300);
+  }
+
+  function draw() {
+    background(220);
+    line(50, 50, 350, 250);
+  }
+  
+</script>]]>
+    </code>
+
+  </program>
+  <p>next section of material asdf adsf afsd fsdfewgfewa ewg aw gag sgga grgra gr garwgegw</p>
+</section>

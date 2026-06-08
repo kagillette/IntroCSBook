@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Section Title</title>
+  <objectives>
+    <ul>
+      <li><p>Understand the coordinate system of the canvas</p></li>
+      <li><p>Render a line</p></li>
+      <li><p>Name and save a program</p></li>
+    </ul>
+  </objectives>
+  <p> Text of section. </p>
+
+</section>
