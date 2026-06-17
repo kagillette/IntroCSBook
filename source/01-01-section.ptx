@@ -5,44 +5,54 @@
   <objectives>
     <ul>
       <li><p>Startup the p5.js editor and properly log in</p></li>
-      <li><p>Use the p5.js editor</p></li>
-      <li><p>Run the default program</p></li>
+      <li><p>Run the starter code</p></li>
     </ul>
   </objectives>
 
   <p>
     The p5.js editor is where we will write, save, and run our JavaScript programs. We will 
-    use some elements from the p5.js library to make our programs visual, which helps us to 
-    <q>see</q> whether or not our program is doing what we want it to do. 
+    use some elements from the p5.js library to make our programs visual, which can help us  
+    <q>see</q> whether or not our program is doing what we want it to do. The visual components
+    also make programs both interesting and fun!
   </p>
 
   <p>Let's get started!</p>
-  <p>Open the editor in your browser: <url href="https://editor.p5js.org/"/> or you can search for <alert>"p5js editor"</alert></p>
-  <p>To enlarge any image, click once on the image. Click again to make it normal size.</p>
+
+  <p>
+    Open the editor in your browser: <url href="https://editor.p5js.org/"/> or you can search 
+    for <alert>"p5js editor"</alert>
+  </p>
+
+  <p>
+    To enlarge any image, click once on the image. Click again to make it normal size.
+  </p>
  
   <figure xml:id="new-editor">
-    <caption>A new editor, with a code window that contains <alert>template</alert> code</caption>
+    <caption>A new editor, with a code window containing <alert>starter code</alert></caption>
     <image source="images/NewEditor.png" width="80%"/>    
   </figure>
 
-  <p>Choose <alert>Log in</alert> in the upper-right corner.</p>
+  <p>Choose <alert>Log in</alert> in the upper-right corner and a window, like the one below, will appear.</p>
   
   <figure xml:id="login-screen">
-    <caption>The log in window. Select, Login with Google - make sure that you are logged into your CA Google account.</caption>
+    <caption>Select, Login with Google using your CA account.</caption>
     <image source="images/LoginScreen.png" width="40%"/>    
   </figure>
-
-  <p>You log in so all the programs that you write can be saved under your account.</p>
 
   <p>Press the <alert>Play</alert> button.</p>
   
   <figure xml:id="fig-blank-canvas">
-    <caption>Creates a blank canvas - the gray square on the right.</caption>
+    <caption>Creates a blank canvas, which is the gray square to the right of the code window.</caption>
     <image source="images/NewEditorRun.png" width="80%"/>    
   </figure>
 
-  <p>Although they are too tiny to see, the default canvas is made up of 160,000 (400x400) dots called <term>Pixels</term>. 
-     We will explore pixels more in the following sections.</p>
+  <p>
+    Although they are too tiny to see, the default canvas is made up of 160,000 (400x400) dots 
+    called <term>Pixels</term>. We will explore pixels more in the following sections.
+  </p>
 
-  <p>We will ofter use <term>js</term> for JavaScript and <term>p5</term> for either the p5.js editor or library.</p>   
+  <p>
+    <em>NOTE:</em> We will often use <term>js</term> for JavaScript and <term>p5</term> for either the p5.js 
+    editor or library.
+  </p>   
 </section>

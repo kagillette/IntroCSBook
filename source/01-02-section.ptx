@@ -2,31 +2,141 @@
 
 <section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Functions</title>
-    <objectives>
+
+  <objectives>
     <ul>
       <li><p>Understanding how the starter code works</p></li>
-      <li><p>Begin to understand the purpose of the functions, <c>setup</c>, <c>draw</c>, <c>canvas</c>, <c>background</c></p></li>
+      <li><p>Identify function definitions, <c>setup</c>, <c>draw</c></p></li>
+      <li><p>Identify function calls, <c>createCanvas</c>, <c>background</c></p></li>
     </ul>
   </objectives>
 
-  <p>There are two <term>function definitions</term> in the code window: setup and draw.</p>
-  <pre>
-    <code>
+  <subsection>
+    <title>Starter Code</title>    
+    <p>
+      Each time you make a new p5 program you will get the starter code shown below.
+    </p>
+  
+    <program language="javascript">
+    <![CDATA[
+    function setup() {
+      createCanvas(400, 400);
+    }
+
+    function draw() {
+      background(220);
+    }
+    ]]>
+    </program>
+
+    <p>
+      When you press the play button, p5 executes the setup function and the single statement within
+      setup's curly braces, <c>createCanvas(400, 400)</c>, is executed.
+    </p> 
+
+    <p>
+      Next, the draw function is executed and the statement contained with it's curly braces,
+      <c>background(220)</c> is executed. The background function is executed repeatedly, but since 
+      there are no changes to the canvas, you will not notice this is happening. We sometimes refer 
+      to the draw function as the draw loop.
+    </p>
+  </subsection>
+
+<subsection>
+  <title>Syntax</title>
+
+  <p>
+    Imagine the following situation. You write an essay, then turn it into your English teacher. They read your 
+    essay, locate and markup the first grammar mistake, then hand the paper back to you. You correct
+    this mistake and resubmit the essay. This process continues until there are no more grammar mistakes in your
+    paper. Then, and only then, does your teacher read your essay for it's content.
+  </p>
+
+  <p>
+    Writing a computer program is very much like the process above. Fortunately, a computer language's grammar, 
+    called syntax, is simpler than those of natural languages, such as English, French, Chinese, and Spanish. 
+    When a syntax error occurs, the computer will state which rule was broken and approximate its location. 
+    Learning to decipher these messages takes practice. Keep in mind that a program must be completely free of 
+    syntax errors before it can execute.
+  </p>
+</subsection>
+
+<subsection> 
+  <title>Function Definitions</title>
+
+  <p>
+    There are two types of functions in js, those that return values, like <m>f(x)</m> 
+    in math, and those that don't return a value. We will mostly focus on writing 
+    function definitions that don't return values. You can think of a function definition as a 
+    container; it holds a block of code that runs whenever you call that function.
+  </p>
+
+  <p>
+    To write a function definition, you must include all of the parts, 
+    in the correct order, for the definition to be syntactically correct.
+  </p>
+
+  <p>Below are the syntax rules for a function definition:</p>
+
+  <ul>
+    <li><p>Starts with the word <c>function</c></p></li>
+    <li><p>Then the name of the function</p></li>
+    <li><p>Followed by a pair of parentheses<c>()</c>, which may or may not contain one or more 
+      items between them</p></li>
+    <li><p>A left curly brace, <c>{</c></p></li>
+    <li><p>Finally, a closing right curly brace<c>}</c></p></li>
+  </ul>
+
+  <p>An example of a function definition</p>
+
+  <program language="javascript">
+    <![CDATA[
+    function functionName() {
+    }
+    ]]>
+  </program>
+
+  <p>
+    The closing right curly brace may look a bit odd being alone on the next line, but
+    as we will see in the next example, it will have one or more statements before it.
+  </p> 
+
+  <p>
+    There are two <term>function definitions</term> in the code window: setup and draw.
+    Note, while not necessary for js to understand your program, we indent all the code 
+    between the line that has the word function and the right curly brace.
+  </p>
+
+  <program language="javascript">
+    <![CDATA[
       function setup() {
-         ...
+         createCanvas(400, 400);
       }
 
       function draw() {
-         ...
+         background(220);
       }
-    </code>
-  </pre>     
+   ]]>
+  </program>    
+
+ 
+</subsection>
+
+<subsection>
+  <title>Function Calls</title>
+
   <p>
-    The statement inside the setup function, <c>createCanvas</c>, is executed one time, 
-    while the statement inside the draw function, <c>background</c>, is executed repeatedly 
-    (this is often referred to as an infinite loop).    
+    The statement inside the setup function, <c>createCanvas</c>, is a <term>function call</term>. 
+    It contains two arguments which specify the width and height of the canvas in pixels.
   </p>
-  <p><c>createCanvas(400,400)</c> is a <term>function call</term>. It calls a built-in function 
+
+  <figure xml:id="canvas_height_lessthan_width">
+    <caption>In this example, the second argument was changed to 200, so now, the width is twice the height.</caption>
+    <image source="images/changeCanvasHeight.png" width="80%"/>    
+  </figure>
+  
+  <p>
+    <c>createCanvas(400,400)</c> is a <term>function call</term>. It calls a built-in function 
      from the p5 library. It has two arguments inside it's parentheses, 400 and 400.
      The first argument makes a canvas that is 400 <term>pixels</term> wide and 400 
      <term>pixels</term> tall. As you recall, it is the gray square to the right of the 
@@ -36,8 +146,11 @@
   <p>MCQ WHAT IS THE OTHER FUNCTION CALL IN THIS PROGRAM?</p>
   <p>MCQ WHAT IS THE ARGUMENT TO THIS FUNCTION CALL?</p>   
 
-  <p>For the following, the canvas will appear <alert>below</alert> the code window, which 
-    is different from the p5 editor</p>
+  <p>
+    For the following, the canvas will appear <alert>below</alert> the code window, which 
+    is different from the p5 editor
+  </p>
+
  <program xml:id="p5js-modify-starter-code" interactive="activecode" language="html">
 
     <preamble visible="no">
@@ -67,4 +180,69 @@
 
   <p>Arguments are separated by commas, so the number of commas will always be one less than
      the number of arguments.    </p>
+  </subsection>   
+
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="function_definition" language="javascript">
+      <title>Mixed-up Code Example</title>
+      <statement>
+          <p>Rearrange the blocks to correctly define the function.</p>
+      </statement>
+      <blocks layout="horizontal">
+          <block order="1"><c>function</c></block>
+          <block order="2"><c>foo</c></block>
+          <block order="3"><c>(</c></block>
+          <block order="4"><c>)</c></block>
+          <block order="5"><c>{</c></block>
+          <block order="6"><c>}</c></block>  
+      </blocks>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Which are examples of function definitions?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice>
+          <statement>
+            <p>setup and createCanvas</p>
+          </statement>
+          <feedback>
+            <p>Incorrect. One of these is a function definition and the other is a function call.</p>
+          </feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>setup and draw</p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! Both of these are preceded by the <term>reserved word</term>, function, and 
+              meet the syntactic requirements.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>draw and background</p>
+          </statement>
+          <feedback>
+            <p>No. One of these is a function definition and the other is a function call.</p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>createCanvas and background</p>
+          </statement>
+          <feedback>
+            <p>Incorrect. Neither is preceded by the word function.</p>
+          </feedback>
+        </choice>
+      </choices>
+</exercise>
+  </subsection>
 </section>
